@@ -1,6 +1,2 @@
-require "make_up/version"
-
-module MakeUp
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative "make_up/version"
+require_relative "make_up/cli"
