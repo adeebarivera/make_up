@@ -2,5 +2,5 @@
 
 require_relative "../lib/make_up"
 
-Make_up::CLI.new.start 
+#Cli.new.start 
 
