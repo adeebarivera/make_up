@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require_relative "../lib/make_up"
+require_relative "../lib/make_up_cli"
 
 #Cli.new.start 
 
