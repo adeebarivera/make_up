@@ -9,6 +9,7 @@ class Api
       price = makeup["price"]
       description = makeup["description"]
       product_api_url = makeup["product_api_url"]
+      binding.pry
     Make_Up.new(name, price, description, product_api_url)
     end
   end
