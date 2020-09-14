@@ -1,4 +1,4 @@
-class Studio_Ghibli
+class Makeup
 
     attr_accessor :name, :price, :description, :product_api_url
     @@all = []
