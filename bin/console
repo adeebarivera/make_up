@@ -2,7 +2,7 @@
 
 require "bundler/setup"
 Bundler.require(:default)
-require_relative "../lib/make_up_cli.rb"
+require_relative "../lib/enviroment.rb"
 
 
 Pry.start
