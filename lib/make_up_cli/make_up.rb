@@ -8,7 +8,7 @@ class Makeup
       @price = price
       @description = description
       @product_api_url = product_api_url
-        @@all << self
+      @@all << self
     end
 
     def self.all
