@@ -1,5 +1,5 @@
 class Api
-  BASE_URL = 'http://makeup-api.herokuapp.com/api/v1/products.json?brand=covergirl&product_type=lipstick'
+  BASE_URL = 'http://makeup-api.herokuapp.com/api/v1/products.json?brand=nyx&product_type=lipstick'
 
   def self.get_makeup
     response = RestClient.get(BASE_URL)
@@ -8,8 +8,8 @@ class Api
       name = makeup["name"]
       price = makeup["price"]
       description = makeup["description"]
-      product_api_url = makeup["product_api_url"]
-      Makeup.new(name, price, description, product_api_url)
+      api_featured_image = makeup["api_featured_image"]
+      Makeup.new(name, price, description, api_featured_image)
     end
   end
 end
