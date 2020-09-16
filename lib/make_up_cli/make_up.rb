@@ -1,13 +1,13 @@
 class Makeup
 
-    attr_accessor :name, :price, :description, :product_api_url
+    attr_accessor :name, :price, :description, :image_link
     @@all = []
 
-    def initialize(name, price, description, product_api_url)
+    def initialize(name, price, description, image_link)
       @name = name
       @price = price
       @description = description
-      @product_api_url = product_api_url
+      @image_link = image_link
       @@all << self
     end
 
