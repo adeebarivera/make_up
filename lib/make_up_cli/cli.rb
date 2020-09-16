@@ -40,7 +40,7 @@ EOF
   end
 
   def print_all
-    Makeup.all.each.with_index(1) { |p, index| puts "#{index}.) #{p.name}.)" }
+    Makeup.all.each.with_index(1) { |p, index| puts "#{index}.) #{p.name.colorize(:green)}.) #{p.product_type.colorize(:red)}" }
   end
 
   def user_input
