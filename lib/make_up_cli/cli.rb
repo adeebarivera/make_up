@@ -60,7 +60,6 @@ EOF
 
   def pick_makeup
         puts "Please select a number:".colorize(:cyan)
-        input = gets.chomp.to_i
     end
 
   def list_selection
