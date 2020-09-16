@@ -69,9 +69,10 @@ EOF
          if index.between?(0,last_element) 
             system "clear"
             makeup = Makeup.all[index]
-            puts "Price: #{makeup.price}"
-            puts "Description #{makeup.description}"
-            puts "product_api_url: #{makeup.product_api_url}"
+            puts "name: #{makeup.name}".colorize(:red)
+            puts "Price: #{makeup.price}".colorize(:green)
+            puts "Description: #{makeup.description}".colorize(:yellow)
+            puts "product_api_url: #{makeup.product_api_url}".colorize(:blue)
         else
             puts "Please enter a valid number:".colorize(:light_red)
             list_selection
