@@ -10,7 +10,7 @@ class Api
       description = makeup["description"]
       api_featured_image = makeup["api_featured_image"]
       product_type = makeup["product_type"]
-      Makeup.new(name, price, description, api_featured_image, product_type)
+      Makeup.new(name, price, description, api_featured_image, product_type) #create new instance
     end
   end
 end

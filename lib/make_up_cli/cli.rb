@@ -36,7 +36,6 @@ EOF
     pick_makeup
     list_selection
     selection
-
   end
 
   def print_all
@@ -44,13 +43,13 @@ EOF
   end
 
   def user_input
-    gets.chomp.downcase
+    gets.chomp.downcase #gets the data/ removes extra space / downcases input
   end
 
 
   def makeup_list
            puts "Would you like to see the list of make up? y/n"
-           input = user_input
+           input = user_input.downcase
         if input == "yes" || input == "y"
            print_all
         else
@@ -64,8 +63,8 @@ EOF
 
   def list_selection
              index = user_input.to_i - 1
-            last_element = Makeup.all.size - 1
-         if index.between?(0,last_element)
+            last_element = Makeup.all.size - 1 #going thru @@all array get the lenght and subtract 1 because it starts at 0
+         if index.between?(0,last_element) #checks that it is in acceptable range
             system "clear"
             makeup = Makeup.all[index]
             puts "name: #{makeup.name}".capitalize.colorize(:red)
